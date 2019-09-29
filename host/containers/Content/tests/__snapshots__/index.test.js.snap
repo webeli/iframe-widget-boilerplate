@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Content /> should render and match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Content__Container-sc-1k6j3mk-0 fYhKii container flex mt-20 mx-auto"
+  >
+    <div
+      class="w-1/2 pl-4 pr-24"
+    >
+      <div
+        class="w-full pt-12 px-6 pb-8 bg-gray-300"
+      >
+        <div
+          class="form-header mb-4"
+        >
+          <p
+            class="text-4xl font-bold"
+          >
+            Write to us
+          </p>
+          <p
+            class="font-bold leading-relaxed"
+          >
+            Tell us what you are experiencing. The more details you give us, the faster we can assist you.
+          </p>
+        </div>
+        <div
+          class="form-content"
+        >
+          <form
+            class="w-full max-w-lg"
+          >
+            <div
+              class="flex flex-wrap mb-4"
+            >
+              <div
+                class="w-1/2 pr-3"
+              >
+                <label
+                  class="block mb-1 text-sm"
+                >
+                  <span
+                    class="inline-block text-red-500 mr-1"
+                  >
+                    *
+                  </span>
+                  First Name
+                </label>
+                <input
+                  class="w-full rounded pl-2 text-sm h-8"
+                  maxlength="25"
+                  placeholder="John"
+                  type="text"
+                />
+              </div>
+              <div
+                class="w-1/2 pl-3"
+              >
+                <label
+                  class="block mb-1 text-sm"
+                >
+                  <span
+                    class="inline-block text-red-500 mr-1"
+                  >
+                    *
+                  </span>
+                  Last Name
+                </label>
+                <input
+                  class="w-full rounded pl-2 text-sm h-8"
+                  maxlength="25"
+                  placeholder="Doe"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div
+              class="mb-4"
+            >
+              <label
+                class="block mb-1 text-sm"
+              >
+                <span
+                  class="inline-block text-red-500 mr-1"
+                >
+                  *
+                </span>
+                I would like help with
+              </label>
+              <textarea
+                class="w-full resize-none"
+                maxlength="400"
+                rows="8"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-1/2 px-20"
+    >
+      <p
+        class="text-4xl font-bold mb-1"
+      >
+        <svg
+          class="feather feather-message-square inline-block mr-2"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+          />
+        </svg>
+        Lorem Ipsum
+      </p>
+      <p
+        class="text-sm font-semibold mb-4"
+      >
+        quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel
+      </p>
+      <hr
+        class="py-2"
+      />
+      <p
+        class="text-xl font-semibold mb-2"
+      >
+        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+      </p>
+      <p>
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

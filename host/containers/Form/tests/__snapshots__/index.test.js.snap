@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> should render and match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full pt-12 px-6 pb-8 bg-gray-300"
+  >
+    <div
+      class="form-header mb-4"
+    >
+      <p
+        class="text-4xl font-bold"
+      >
+        Write to us
+      </p>
+      <p
+        class="font-bold leading-relaxed"
+      >
+        Tell us what you are experiencing. The more details you give us, the faster we can assist you.
+      </p>
+    </div>
+    <div
+      class="form-content"
+    >
+      <form
+        class="w-full max-w-lg"
+      >
+        <div
+          class="flex flex-wrap mb-4"
+        >
+          <div
+            class="w-1/2 pr-3"
+          >
+            <label
+              class="block mb-1 text-sm"
+            >
+              <span
+                class="inline-block text-red-500 mr-1"
+              >
+                *
+              </span>
+              First Name
+            </label>
+            <input
+              class="w-full rounded pl-2 text-sm h-8"
+              maxlength="25"
+              placeholder="John"
+              type="text"
+            />
+          </div>
+          <div
+            class="w-1/2 pl-3"
+          >
+            <label
+              class="block mb-1 text-sm"
+            >
+              <span
+                class="inline-block text-red-500 mr-1"
+              >
+                *
+              </span>
+              Last Name
+            </label>
+            <input
+              class="w-full rounded pl-2 text-sm h-8"
+              maxlength="25"
+              placeholder="Doe"
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          class="mb-4"
+        >
+          <label
+            class="block mb-1 text-sm"
+          >
+            <span
+              class="inline-block text-red-500 mr-1"
+            >
+              *
+            </span>
+            I would like help with
+          </label>
+          <textarea
+            class="w-full resize-none"
+            maxlength="400"
+            rows="8"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;
