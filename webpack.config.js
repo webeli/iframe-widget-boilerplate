@@ -17,8 +17,6 @@ const DEV_SERVER_HOST_URL = config.get('hostUrl');
 
 // NOTE: entry starts with `$` will be excluded for chunks splitting and hashing
 const baseConfig = {
-  mode: WEBPACK_MODE,
-  bail: isProduction,
   context: Paths.rootDir,
   resolve: {
     extensions: ['.js', '.jsx']
@@ -75,13 +73,4 @@ const baseConfig = {
   }
 };
 
-
-const webpackConfig = isProduction ? prodConfig : devConfig;
-
-// to deploy to netlify
-if (process.env.NODE_ENV === 'netlify') {
-  webpackConfig.mode = 'production';
-  webpackConfig.bail = true;
-}
-
-module.exports = Merge.smart(baseConfig, webpackConfig);
+module.exports = Merge.smart(baseConfig, process.env.NODE_ENV === 'production' ? prodConfig : devConfig);
