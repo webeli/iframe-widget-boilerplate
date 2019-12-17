@@ -9,7 +9,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Merge = require('webpack-merge');
 
 const Paths = require('./webpack/utils/paths');
-const { WEBPACK_MODE, isProduction } = require('./webpack/utils/env')
+const { WEBPACK_MODE, isProduction } = require('./webpack/utils/env');
 const devConfig = require('./webpack/dev.config');
 const prodConfig = require('./webpack/prod.config');
 
@@ -17,6 +17,8 @@ const DEV_SERVER_HOST_URL = config.get('hostUrl');
 
 // NOTE: entry starts with `$` will be excluded for chunks splitting and hashing
 const baseConfig = {
+  mode: WEBPACK_MODE,
+  bail: isProduction,
   context: Paths.rootDir,
   resolve: {
     extensions: ['.js', '.jsx']
@@ -73,4 +75,13 @@ const baseConfig = {
   }
 };
 
-module.exports = Merge.smart(baseConfig, WEBPACK_MODE === 'development' ? devConfig : prodConfig);
+
+const webpackConfig = isProduction ? prodConfig : devConfig;
+
+// to deploy to netlify
+if (process.env.NODE_ENV === 'netlify') {
+  webpackConfig.mode = 'production';
+  webpackConfig.bail = true;
+}
+
+module.exports = Merge.smart(baseConfig, webpackConfig);
