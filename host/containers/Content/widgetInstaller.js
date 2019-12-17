@@ -6,7 +6,7 @@ export function install () {
   const scriptTag = document.createElement('script');
   scriptTag.type = 'text/javascript';
   scriptTag.async = true;
-  scriptTag.src = `${window.WIDGET_CONFIG.ASSETS_URL}/js/widget-loader.js`;
+  scriptTag.src = `${window.WIDGET_CONFIG.ASSETS_URL || window.location.href}/js/widget-loader.js`;
 
   document.body.appendChild(scriptTag);
 }
