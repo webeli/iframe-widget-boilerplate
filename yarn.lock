@@ -1289,7 +1289,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fullhuman/postcss-purgecss@npm:^2.1.2, @fullhuman/postcss-purgecss@npm:^2.2.0":
+"@fullhuman/postcss-purgecss@npm:^2.1.2":
   version: 2.2.0
   resolution: "@fullhuman/postcss-purgecss@npm:2.2.0"
   dependencies:
@@ -6258,7 +6258,6 @@ fsevents@^1.2.7:
     "@babel/core": ^7.10.2
     "@babel/preset-env": ^7.10.2
     "@babel/preset-react": ^7.10.1
-    "@fullhuman/postcss-purgecss": ^2.2.0
     "@testing-library/react": ^10.2.1
     animate.css: ^4.1.0
     autoprefixer: ^9.8.0

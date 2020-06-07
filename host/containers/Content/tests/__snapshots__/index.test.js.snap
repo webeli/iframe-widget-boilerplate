@@ -3,7 +3,7 @@
 exports[`<Content /> should render and match the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="Content__Container-sc-1k6j3mk-0 fYhKii container flex mt-20 mx-auto"
+    class="Content__Container-sc-1k6j3mk-0 cVcvRe container flex mt-20 mx-auto"
   >
     <div
       class="w-1/2 pl-4 pr-24"

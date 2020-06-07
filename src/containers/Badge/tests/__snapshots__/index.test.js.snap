@@ -6,7 +6,7 @@ exports[`<Badge /> should render and match the snapshot 1`] = `
     class="flex items-center cursor-pointer p-2 animated fadeIn"
   >
     <div
-      class="Badge__BadgeConent-sc-12uub00-1 dyIDMi bg-green-800 py-3 px-6 w-48 -mr-4 rounded-l-lg"
+      class="Badge__BadgeConent-sc-12uub00-1 bRLETz bg-green-800 py-3 px-6 w-48 -mr-4 rounded-l-lg"
     >
       <p
         class="text-white font-medium tracking-wide"
@@ -15,7 +15,7 @@ exports[`<Badge /> should render and match the snapshot 1`] = `
       </p>
     </div>
     <div
-      class="Badge__BadgeIcon-sc-12uub00-0 VLUKT bg-green-800 border-white rounded-full flex items-center justify-center"
+      class="Badge__BadgeIcon-sc-12uub00-0 jUwcLq bg-green-800 border-white rounded-full flex items-center justify-center"
     >
       <i
         class="h-6 w-6"
