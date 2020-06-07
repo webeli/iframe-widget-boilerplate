@@ -7,6 +7,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Merge = require('webpack-merge');
+const PnpWebpackPlugin = require('pnp-webpack-plugin');
 
 const Paths = require('./webpack/utils/paths');
 const { WEBPACK_MODE, isProduction } = require('./webpack/utils/env');
@@ -19,7 +20,15 @@ const DEV_SERVER_HOST_URL = config.get('hostUrl');
 const baseConfig = {
   context: Paths.rootDir,
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    plugins: [
+      PnpWebpackPlugin
+    ]
+  },
+  resolveLoader: {
+    plugins: [
+      PnpWebpackPlugin.moduleLoader(module)
+    ]
   },
   entry: {
     '$widget-loader': path.resolve(Paths.srcDir, 'loader.js'),
